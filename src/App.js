@@ -5,7 +5,7 @@ import Gallery from './Gallery'
 function App() {
   const formatDate = date => date.toISOString().substring(0, 10)
 
-  const apiKey = 'your-api-key-comes-here'
+  const apiKey = 'your-api-key'
   const firstDate = new Date(1995 - 6 - 16)
   const todayDate = new Date()
 
