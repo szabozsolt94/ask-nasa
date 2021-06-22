@@ -16,8 +16,6 @@ const Gallery = ({ formatDate, apiKey }) => {
     const getData = async url => {
         const res = await fetch(url)
         if (res.status !== 200) return "Error"
-        const data = await res.json()
-        setAllData(data)
     }
 
     getData(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&start_date=${startDate}&end_date=${endDate}`)
